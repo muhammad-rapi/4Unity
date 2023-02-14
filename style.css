@@ -10,7 +10,7 @@
 
 body{
   font-family: 'Poppins', sans-serif;
-  overflow: hidden;
+  overflow-x: hidden;
 }
 
 
@@ -81,6 +81,7 @@ nav ul li a:hover{
   height: 20px;
   justify-content: space-between;
   position: relative;
+  right: -30px;
 }
 
 .menu-toggle input{
@@ -101,6 +102,7 @@ nav ul li a:hover{
   background-color: #094067;
   transition: .5s;
   z-index: 100;
+
 }
 
 
@@ -118,13 +120,12 @@ nav ul li a:hover{
 
 .menu-toggle input:checked ~ span:nth-child(2){
   transform: rotate(45deg) translate(-1px ,0);
-  background-color: white;
+  background-color: #094067;
 }
 
 .menu-toggle input:checked ~ span:nth-child(4){
   transform: rotate(-45deg) translate(-1px, 0);
-  background-color: white;
-
+  background-color: #094067;
 }
 
 .menu-toggle input:checked ~ span:nth-child(3){
@@ -136,30 +137,25 @@ nav ul li a:hover{
 /* Responsive Breakpoint */
 
 @media screen and (max-width:768px){
-  
-  body{
-    overvlow-x: hidden;
-  }
-  
   nav ul{
     position: absolute;
-    right: 0;
+    padding-left: 10px;
     top: 0;
-    height: 100vh;
+    height: 200px;
     flex-direction: column;
-    align-items: center;
-    background-color: #3da9fc; 
+    /* align-items: center; */
+    background-color: #43a3ec; 
     justify-content: space-evenly;
     z-index: 99;
-    width: 70%;
-    transform: translateX(100%);
+    width: 100%;
+    transform: translateY(-100%);
     transition: all 1s;
-    opacity: 0;
+    opacity: 1;
     /* border-left: 3px solid #094067; */
   }
 
   nav ul.slide{
-    transform: translateX(0);
+    transform: translateY(0);
     opacity: 1;
   }
 
@@ -352,7 +348,7 @@ nav ul li a:hover{
   
 .about-content{
   left: 50px;
-  top: 150px;
+  top: 90px;
   width: 300px;
 }
 
@@ -369,6 +365,7 @@ nav ul li a:hover{
   width: 350px;
   left: 20px;
   filter: opacity(.7);
+  top: 30px;
 }
 
 .about-content .about-btn{
