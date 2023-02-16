@@ -14,14 +14,13 @@
 body{
   font-family: 'Poppins', sans-serif;
   overflow-x: hidden;
-  width : 100%
 }  
 
 
 .header{
   min-height: 100vh;
   margin-bottom: 200px;
-  width: 100%
+  width: 100%;
 }
 
 /* Navbar */
@@ -32,6 +31,7 @@ nav {
   align-items: center;
   color: #094067;
   position: relative;
+
 }
 
 nav .logo{
@@ -204,8 +204,9 @@ nav ul li a:hover{
 .header-img img{
   width: 60%;
   position: absolute;
-  left: 40%;
+  left: 39%;
   top: 7%;
+
 }
 
 .header-content .header-btn{
