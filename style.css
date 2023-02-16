@@ -1,17 +1,20 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;500;600&display=swap');
 
 
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   scroll-behavior: smooth;
+  /* border: 2px solid red; */
+
 }
 
 body{
   font-family: 'Poppins', sans-serif;
   overflow-x: hidden;
-}
+}  
 
 
 .header{
@@ -22,9 +25,7 @@ body{
 /* Navbar */
 nav {
   display: flex;
-  /* background-color: rgb(11, 11, 66) ; */
   justify-content: space-around;
-  /* padding: 20px 0; */
   height: 80px;
   align-items: center;
   color: #094067;
@@ -36,20 +37,13 @@ nav .logo{
 }
 
 nav .logo img{
-  /* letter-spacing: 2px;
-  font-size: 30px;
-  font-weight:600; */
   width: 110px;
   height: 110px;
-  
+  z-index: 99999;
   position: absolute;
   top: -30px;
   left: -50px;
 }
-
-/* nav .logo span{
-  font-size: 40px;
-} */
 
 
 nav ul {
@@ -81,7 +75,7 @@ nav ul li a:hover{
   height: 20px;
   justify-content: space-between;
   position: relative;
-  right: -30px;
+  right: -35px;
 }
 
 .menu-toggle input{
@@ -137,21 +131,24 @@ nav ul li a:hover{
 /* Responsive Breakpoint */
 
 @media screen and (max-width:768px){
+
+  
+
   nav ul{
-    position: absolute;
     padding-left: 10px;
     top: 0;
+    right: 0;
     height: 200px;
     flex-direction: column;
-    /* align-items: center; */
+    align-items: center;
     background-color: #43a3ec; 
     justify-content: space-evenly;
     z-index: 99;
     width: 100%;
     transform: translateY(-100%);
-    transition: all 1s;
+    transition: all .8s;
     opacity: 1;
-    /* border-left: 3px solid #094067; */
+    position: absolute;
   }
 
   nav ul.slide{
@@ -166,8 +163,8 @@ nav ul li a:hover{
 
   nav .logo img{
     left: -60px;
-    width: 100px;
-    height: 100px;
+    width: 90px;
+    height: 90px;
   }
 
 }
@@ -203,7 +200,6 @@ nav ul li a:hover{
 
 
 .header-img img{
-  /* width: 60%; */
   width: 60%;
   position: absolute;
   left: 40%;
@@ -268,7 +264,7 @@ nav ul li a:hover{
 /* About */
 
 .about{
-  width: 100%;
+  width: 100vmin;
   margin-bottom: 200px;
   position: relative;
   background-color: #d8eefe;
@@ -277,9 +273,6 @@ nav ul li a:hover{
   align-items: center;
 }
 
-.mid-about{
-  margin-top: 100px;
-}
 
 .about-content{
   display: flex;
@@ -287,9 +280,7 @@ nav ul li a:hover{
   width:40%;
   color: #094067;
   position: relative;
-  top: -100px;
-  left: 70px;
-  /* z-index: 2; */
+  transform: translateX(7%)
 }
 
 .about-content p{
@@ -301,27 +292,18 @@ nav ul li a:hover{
 }
 
 .about-content h1{
-  font-size: 50px;
+  font-size: 3em;
   font-weight: 600;
   margin-bottom: 10px;
 }
 
-/* .about-img{
-  background-color: ;
-  position: relative;
-  width: 500px;
-  height: 500px;
-  right: 0;
-} */
 
 .about-img img{
-  /* width: 60%; */
+  top: 70px;
+  right: 70px;
   width: 45%;
-  /* background-color: #094067; */
   z-index: 999;
   position: absolute;
-  top: 100px;
-  right: 70px;
 }
 
 .about-content .about-btn{
@@ -347,8 +329,8 @@ nav ul li a:hover{
 @media screen and (max-width:768px){
   
 .about-content{
-  left: 50px;
-  top: 90px;
+  left: 20px;
+  top: 50px;
   width: 300px;
 }
 
@@ -357,14 +339,13 @@ nav ul li a:hover{
 }
 
 .about-content p{
-  font-size: 15px;
+  font-size: 13px;
   font-weight: 500;
 }
 
 .about-img img{
-  width: 350px;
-  left: 20px;
-  filter: opacity(.7);
+  width: 320px;
+  left: 30px;
   top: 30px;
 }
 
