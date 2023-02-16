@@ -273,6 +273,7 @@ nav ul li a:hover{
   min-height: 100vh;
   display: flex;
   align-items: center;
+  border: 2px solid red;
 }
 
 
